@@ -1,4 +1,4 @@
-# BEGINNING INTEROPERABILITY CURRICULUM with Interoperability Land™
+# Introductory INTEROPERABILITY CURRICULUM with Interoperability Land™
 
 ## About the Curriculum
 
