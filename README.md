@@ -1,4 +1,8 @@
-# Introductory INTEROPERABILITY CURRICULUM with Interoperability Land™
+# Introductory Curriculum for use with Interoperability Land™
+
+## About Interoperability Land™
+
+Interoperabilty Land™ is a synthetic FHIR data ecosystem platform for app design and testing. It can be accessed at interopland.com. 
 
 ## About the Curriculum
 
