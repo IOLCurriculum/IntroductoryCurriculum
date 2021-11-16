@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "00cbf0d6-346b-434f-adf7-e987aaf0e502",
+		"name": "Health Risk Assessment Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Five Lakes Health System Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/five-lakes-health-system/fhir/Patient?identifier=a85e0ec3c3f34915bd545abf74470fab&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "a85e0ec3c3f34915bd545abf74470fab"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blaze Global Health System Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/Patient?identifier=938d0696359d4870a3dd0b68937f4af6&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "938d0696359d4870a3dd0b68937f4af6"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient Last Name Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/five-lakes-health-system/fhir/Patient?name=Giles&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Giles"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vital Signs Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/Observation?patient=166&component-code=8302-2&_format=json&_pretty=true&_sort=-date&_count=1",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "component-code",
+							"value": "8302-2"
+						},
+						{
+							"key": "_format",
+							"value": "json"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						},
+						{
+							"key": "_sort",
+							"value": "-date"
+						},
+						{
+							"key": "_count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Questionnaire Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/Questionnaire?_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"Questionnaire"
+					],
+					"query": [
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Independent Primary Network Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/independent-primary-network/fhir/Patient?identifier=a85e0ec3c3f34915bd545abf74470fab&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"independent-primary-network",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "a85e0ec3c3f34915bd545abf74470fab"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UScare Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/us-care/fhir/Patient?identifier=a85e0ec3c3f34915bd545abf74470fab&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"us-care",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "a85e0ec3c3f34915bd545abf74470fab"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MiHIN Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/mihinss/fhir/Patient?identifier=938d0696359d4870a3dd0b68937f4af6&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"mihinss",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "938d0696359d4870a3dd0b68937f4af6"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SilverCare Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/silvercare/fhir/Patient?identifier=938d0696359d4870a3dd0b68937f4af6&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"silvercare",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "938d0696359d4870a3dd0b68937f4af6"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Oak Tree Pharmacy Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/oak-tree-pharmacy/fhir/Patient?identifier=938d0696359d4870a3dd0b68937f4af6&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"oak-tree-pharmacy",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "938d0696359d4870a3dd0b68937f4af6"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specialist Network Administration Common Key Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/specialist-network-administration/fhir/Patient?identifier=938d0696359d4870a3dd0b68937f4af6&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"specialist-network-administration",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "938d0696359d4870a3dd0b68937f4af6"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities of Daily Living QuestionnaireResponse Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/QuestionnaireResponse?patient=166&questionnaire=1366409&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"QuestionnaireResponse"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "questionnaire",
+							"value": "1366409"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Smocking QuestionnaireResponse Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/QuestionnaireResponse?patient=166&questionnaire=1366414&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"QuestionnaireResponse"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "questionnaire",
+							"value": "1366414"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fatigue QuestionnaireResponse Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/blaze-global-health-system/fhir/QuestionnaireResponse?patient=166&questionnaire=1366404&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"QuestionnaireResponse"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "questionnaire",
+							"value": "1366404"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bathing QuestionnaireResponse Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/blaze-global-health-system/fhir/QuestionnaireResponse?patient=166&questionnaire=1366405&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"QuestionnaireResponse"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "questionnaire",
+							"value": "1366405"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toileting QuestionnaireResponse Query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rVxshrnOjjaK2VxT6uh6mwc7ITckcmaezN3C",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trfgr86y-lz3.interopland.com/blaze-global-health-system/fhir/QuestionnaireResponse?patient=166&questionnaire=1366407&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"trfgr86y-lz3",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"blaze-global-health-system",
+						"fhir",
+						"QuestionnaireResponse"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "166"
+						},
+						{
+							"key": "questionnaire",
+							"value": "1366407"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
