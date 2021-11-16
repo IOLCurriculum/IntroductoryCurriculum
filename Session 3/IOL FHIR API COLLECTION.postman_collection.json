@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "3692c6e0-214a-45a3-a407-cc709caa6f4e",
+		"name": "IOL FHIR API COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IOL REQUEST #1 - GET Patient Resource",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit\n",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/five-lakes-health-system/fhir/Patient?identifier=000003142",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "000003142"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOL REQUEST #2 - GET All BP Readings for One Person",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit\n",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/five-lakes-health-system/fhir/Observation?patient=4&component-code=8480-6&_format=json&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "4"
+						},
+						{
+							"key": "component-code",
+							"value": "8480-6"
+						},
+						{
+							"key": "_format",
+							"value": "json"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOL REQUEST #3 - Metformin No Authorization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/oak-tree-pharmacy/fhir/Medication?code=860975&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"oak-tree-pharmacy",
+						"fhir",
+						"Medication"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "860975"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOL REQUEST #4 - Metformin With Authorization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit\n",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/oak-tree-pharmacy/fhir/Medication?code=860975&_pretty=true ",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"oak-tree-pharmacy",
+						"fhir",
+						"Medication"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "860975"
+						},
+						{
+							"key": "_pretty",
+							"value": "true "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOL REQUEST #5 - POST",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit\n",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Patient\",\n  \"id\": \"\",\n  \"meta\": {\n    \"versionId\": \"1\",\n    \"lastUpdated\": \"2020-01-10T20:39:55.000+00:00\"\n  },\n  \"text\": {\n    \"status\": \"generated\",\n    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This is a simple example with only plain text</div>\"\n  },\n  \"extension\": [\n    {\n      \"url\": \"http://mihin.org/extension/copyright\",\n      \"valueString\": \"Copyright 2014-2019 Michigan Health Information Network Shared Services. Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0.  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\"\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/Race\",\n            \"code\": \"2056-0\",\n            \"display\": \"Black\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/Ethnicity\",\n            \"code\": \"2186-5\",\n            \"display\": \"Not Hispanic or Latino\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-religion\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/ReligiousAffiliation\",\n            \"code\": \"1041\",\n            \"display\": \"Roman Catholic Church\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://mihin.org/fhir/extension/reference/master\",\n      \"valueString\": \"https://~/mihinss/fhir/Patient/3592\"\n    }\n  ],\n  \"identifier\": [\n    {\n      \"use\": \"official\",\n      \"type\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/identifier-type\",\n            \"code\": \"SB\",\n            \"display\": \"Social Beneficiary Identifier\"\n          }\n        ]\n      },\n      \"system\": \"http://hl7.org/fhir/sid/us-ssn\",\n      \"value\": \"999993142\"\n    },\n    {\n      \"use\": \"official\",\n      \"type\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/identifier-type\",\n            \"code\": \"SB\",\n            \"display\": \"Social Beneficiary Identifier\"\n          }\n        ]\n      },\n      \"system\": \"http://mihin.org/fhir/cks\",\n      \"value\": \"d513fec4d65c4a1383137b232283db7e\"\n    }\n  ],\n  \"active\": true,\n  \"name\": [\n    {\n      \"family\": \"Olaya\",\n      \"given\": [\n        \"Lemon\",\n        \"Lime\"\n      ]\n    }\n  ],\n  \"telecom\": [\n    {\n      \"system\": \"phone\",\n      \"value\": \"989-555-2011\",\n      \"use\": \"home\"\n    },\n    {\n      \"system\": \"phone\",\n      \"value\": \"989-555-7242\",\n      \"use\": \"mobile\"\n    }\n  ],\n  \"gender\": \"female\",\n  \"birthDate\": \"1967-11-24\",\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"type\": \"postal\",\n      \"line\": [\n        \"622 S Atlantic Avenue\"\n      ],\n      \"city\": \"Durand\",\n      \"district\": \"Shiawassee County\",\n      \"state\": \"MI\",\n      \"postalCode\": \"48429\"\n    }\n  ],\n  \"generalPractitioner\": [\n    {\n      \"reference\": \"Practitioner/498\",\n      \"display\": \"Suzanne Acevedo Sims MD\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/five-lakes-health-system/fhir/Patient",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOL REQUEST #6 - PUT",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Pkxm8AMS6evEcVU2u9vAVTAHkySLzTEhf8J9",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "interop_pit\n",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/fhir+json; charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Patient\",\n  \"id\": \"1\",\n  \"meta\": {\n    \"versionId\": \"1\",\n    \"lastUpdated\": \"2020-01-10T20:38:04.000+00:00\"\n  },\n  \"text\": {\n    \"status\": \"generated\",\n    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This is a simple example with only plain text</div>\"\n  },\n  \"extension\": [\n    {\n      \"url\": \"http://mihin.org/extension/copyright\",\n      \"valueString\": \"Copyright 2014-2019 Michigan Health Information Network Shared Services. Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0.  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\"\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/Race\",\n            \"code\": \"2106-3\",\n            \"display\": \"White\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/Ethnicity\",\n            \"code\": \"2186-5\",\n            \"display\": \"Not Hispanic or Latino\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-religion\",\n      \"valueCodeableConcept\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/v3/ReligiousAffiliation\",\n            \"code\": \"1077\",\n            \"display\": \"Protestant\"\n          }\n        ]\n      }\n    },\n    {\n      \"url\": \"http://mihin.org/fhir/extension/reference/master\",\n      \"valueString\": \"https://~/mihinss/fhir/Patient/129\"\n    }\n  ],\n  \"identifier\": [\n    {\n      \"use\": \"official\",\n      \"type\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/identifier-type\",\n            \"code\": \"SB\",\n            \"display\": \"Social Beneficiary Identifier\"\n          }\n        ]\n      },\n      \"system\": \"http://hl7.org/fhir/sid/us-ssn\",\n      \"value\": \"000001081\"\n    },\n    {\n      \"use\": \"official\",\n      \"type\": {\n        \"coding\": [\n          {\n            \"system\": \"http://hl7.org/fhir/identifier-type\",\n            \"code\": \"SB\",\n            \"display\": \"Social Beneficiary Identifier\"\n          }\n        ]\n      },\n      \"system\": \"http://mihin.org/fhir/cks\",\n      \"value\": \"1c784b50530b4654a0234bee484e574a\"\n    }\n  ],\n  \"active\": true,\n  \"name\": [\n    {\n      \"family\": \"Taylor\",\n      \"given\": [\n        \"Katherine\",\n        \"Machhuss\"\n      ],\n      \"suffix\": [\n        \"MD\"\n      ]\n    }\n  ],\n  \"telecom\": [\n    {\n      \"system\": \"phone\",\n      \"value\": \"269-555-9417\",\n      \"use\": \"home\"\n    },\n    {\n      \"system\": \"phone\",\n      \"value\": \"269-555-0636\",\n      \"use\": \"mobile\"\n    }\n  ],\n  \"gender\": \"female\",\n  \"birthDate\": \"1966-02-07\",\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"type\": \"postal\",\n      \"line\": [\n        \"806 N Cherry Avenue\",\n        \"Unit 5\"\n      ],\n      \"city\": \"Constantine\",\n      \"district\": \"St Joseph County\",\n      \"state\": \"HI\",\n      \"postalCode\": \"00000\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://zj9zdg7t-lz3r.interopland.com/five-lakes-health-system/fhir/Patient?identifier=000001081&_pretty=true",
+					"protocol": "https",
+					"host": [
+						"zj9zdg7t-lz3r",
+						"interopland",
+						"com"
+					],
+					"path": [
+						"five-lakes-health-system",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "000001081"
+						},
+						{
+							"key": "_pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
